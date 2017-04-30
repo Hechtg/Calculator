@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator - By Guy Hecht</title>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+    <script src="calculator.js"></script>
+  </head>
+  <body>
+    <div id="calculator"><!--calculator-->
+      <table>
+        <tr><!--headline-->
+          Electronic Calculator
+        </tr><!--/headline-->
+        <tr>
+          <td id="screen"><!--screen-->
+            <tr><!--screen-upper-row-->
+              <td><h1 id="screen-text">0</h1></td>
+            </tr><!--/screen-upper-row-->
+            <tr><!--screen-lower-row-->
+              <td><h4 id="calc-text">0</h4></td>
+            </tr><!--/screen-lower-row-->
+          </td><!--/screen-->
+        </tr>
+        <tr id="buttons"><!--buttons-->
+          <tr><!--buttons-first-row-->
+            <td><button onclick="AC()">AC</button></td>
+            <td><button onclick="CE()">CE</button></td>
+            <td><button onclick="dev()">:</button></td>
+            <td><button onclick="mult()">X</button></td>
+          </tr><!--/buttons-first-row-->
+          <tr><!--buttons-second-row-->
+            <td><button  onclick="seven()">7</button></td>
+            <td><button onclick="eight()">8</button></td>
+            <td><button  onclick="nine()">9</button></td>
+            <td><button onclick="dec()">-</button></td>
+          </tr><!--/buttons-sceond-row-->
+          <tr><!--buttons-third-row-->
+            <td><button  onclick="four()">4</button></td>
+            <td><button  onclick="five()">5</button></td>
+            <td><button  onclick="six()">6</button></td>
+            <td><button onclick="add()">+</button></td>
+          </tr><!--/buttons-third-row-->
+
+          <tr><!--buttons-fourth-and-fith-rows-row-->
+           <td colspan="3"><!--buttons-fourth-and-fith-rows-left-col-->
+             <tr><!--buttons-fourth-row-->
+                <td><button onclick="one()">1</button></td>
+                <td><button onclick="two()">2</button></td>
+                <td><button onclick="three()">3</button></td>
+             </tr><!--/buttons-fourth-row-->
+             <tr><!--buttons-fith-row-->
+               <td colspan="2"><button id="b0"  onclick="zero()">0</button></td>
+               <td><button onclick="decPoint()">.</button></td>
+             </tr><!--/buttons-fith-row-->
+           </tr><!--/buttons-fourth-and-fith-rows-left-col-->
+         </td><!--/buttons-fourth-and-fith-rows-row-->
+         <td colspan="1" rowspan="2"><button id="bEq" onclick="EQ()">=</button></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
